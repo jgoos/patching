@@ -1,6 +1,6 @@
 galaxy_info:
   author: Joep Goossens
-  description: Run sanitize tasks
+  description: Run sanitize checks.
 
   license: MIT
 

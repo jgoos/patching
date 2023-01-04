@@ -1,6 +1,6 @@
 galaxy_info:
   author: Joep Goossens
-  description: Mail Patch Report
+  description: Mail the patch result to system owner.
 
   license: MIT
 
