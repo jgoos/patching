@@ -1,0 +1,5 @@
+---
+# defaults file for patch
+patch_security_updates: false
+patch_bugfix_updates: false
+patch_check_reboot_needed: false

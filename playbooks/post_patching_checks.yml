@@ -1,0 +1,6 @@
+---
+- name: Run POST patching steps
+  hosts: '{{target|default("all")}}'
+  gather_facts: true
+  roles:
+    - jgoos.patch_workflow.post_patch

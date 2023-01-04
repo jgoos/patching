@@ -1,0 +1,5 @@
+---
+# tasks file for reboot
+- name: Unconditionally reboot the machine with all defaults
+  ansible.builtin.reboot:
+  when: aap_patch_wf_reboot_required | default(false) and aap_patch_wf_survey_reboot_selected | default(false)

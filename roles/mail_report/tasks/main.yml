@@ -1,0 +1,13 @@
+---
+# tasks file for mail_report
+- name: Send email
+  community.general.mail:
+    host: "{{ mail_report_smtp_host }}"
+    port: "{{ mail_report_smtp_port }}"
+    secure: starttls
+    username: "{{ mail_report_smtp_username }}"
+    password: "{{ mail_report_smtp_password }}"
+    sender: "Ansible Automation Platform <{{ mail_report_sender }}>"
+    to: "{{ mail_report_send_to }}"
+    subject: "Patch report for system {{ mail_report_system_name }}"
+    body: "{{ lookup('ansible.builtin.template', 'templates/mail_template.j2') }}"

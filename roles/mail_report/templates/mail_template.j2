@@ -1,0 +1,24 @@
+This is a patch report for system: {{ mail_report_system_name }}.
+
+{% if aap_patch_wf_patch_step %}
+
+#TODO#
+Enter patch text
+
+{% endif %}
+
+{{ aap_patch_wf_reboot_required_stdout }}
+
+{% if aap_patch_wf_reboot_required %}
+
+#TODO#  Enter reboot text
+
+{{ aap_patch_wf_reboot_required_stdout }}
+
+{% endif %}
+
+Add system information #TODO
+- system name
+- organization
+- rhel version
+- kernel version

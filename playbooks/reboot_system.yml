@@ -1,0 +1,7 @@
+---
+- name: Reboot the system
+  hosts: '{{target|default("all")}}'
+  become: true
+  gather_facts: true
+  roles:
+    - jgoos.patch_workflow.reboot

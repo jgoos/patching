@@ -1,0 +1,4 @@
+---
+# defaults file for reboot
+reboot_required: "{{ aap_patch_wf_reboot_required | default(false) }}"
+reboot_selected: "{{ aap_patch_wf_survey_reboot_selected | default(false) }}"
