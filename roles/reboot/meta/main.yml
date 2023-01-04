@@ -1,6 +1,6 @@
 galaxy_info:
   author: Joep Goossens
-  description: Run reboot tasks
+  description: Run the reboot tasks.
 
   license: MIT
 

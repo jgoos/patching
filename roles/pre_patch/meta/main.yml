@@ -1,6 +1,6 @@
 galaxy_info:
   author: Joep Goossens
-  description: Run PRE-patch tasks
+  description: Run the PRE-patch tasks and checks.
 
   license: MIT
 

@@ -1,6 +1,6 @@
 namespace: jgoos
 name: patch_workflow
-version: 0.0.9
+version: 0.0.10
 readme: README.md
 authors:
   - J Goossens <jgoos.code@gmail.com>
