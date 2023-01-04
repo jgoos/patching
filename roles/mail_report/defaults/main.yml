@@ -1,0 +1,9 @@
+---
+# defaults file for mail_report
+mail_report_send_to: "{{ system_owner.email }}"
+mail_report_sender: "{{ smtp_username }}"
+mail_report_smtp_host: "{{ smtp_host }}"
+mail_report_smtp_password: "{{ smtp_password }}"
+mail_report_smtp_port: "{{ smtp_port }}"
+mail_report_smtp_username: "{{ smtp_username }}"
+mail_report_system_name: "{{ inventory_hostname }}"

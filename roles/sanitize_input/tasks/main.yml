@@ -1,0 +1,14 @@
+---
+# tasks file for sanitize_input
+- name: Check inputs
+  ansible.builtin.assert:
+    that:
+      - sanitize_input_example <= 100
+      - sanitize_input_example >= 0
+    fail_msg: "'sanitize_input_example' must be between 0 and 100"
+    success_msg: "'sanitize_input_example' is between 0 and 100"
+
+# - FQDN's uit de survey opschonen
+# - Werkende FQDN
+# - Zit de FQDN in de dynamic inventory
+# Misschien al een ping uitvoeren op de machines voor de zekerheid?

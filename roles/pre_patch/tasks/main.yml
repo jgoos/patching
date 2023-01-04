@@ -1,0 +1,5 @@
+---
+# tasks file for pre_patch
+- name: PRE patch steps
+  ansible.builtin.debug:
+    msg: "Run PRE-patch steps"

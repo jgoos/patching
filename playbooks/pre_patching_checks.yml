@@ -1,0 +1,7 @@
+---
+- name: Run PRE patching checks
+  hosts: '{{target|default("all")}}'
+  gather_facts: true
+  become: true
+  roles:
+    - jgoos.patch_workflow.pre_patch

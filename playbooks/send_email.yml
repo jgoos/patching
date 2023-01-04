@@ -1,0 +1,7 @@
+---
+- name: Send email to system owner
+  hosts: '{{target|default("all")}}'
+  connection: local
+  gather_facts: false
+  roles:
+    - jgoos.patch_workflow.mail_report

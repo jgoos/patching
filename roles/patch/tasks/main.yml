@@ -1,0 +1,28 @@
+---
+# tasks file for patch
+- name: Patching the system  # noqa package-latest
+  ansible.builtin.dnf:
+    name: '*'
+    bugfix: "{{ patch_bugfix_updates }}"
+    security: "{{ patch_security_updates }}"
+    state: latest
+
+- name: Check if reboot is needed
+  when: patch_check_reboot_needed
+  block:
+    - name: Install packages needed for pre patch check
+      ansible.builtin.dnf:
+        name: yum-utils
+        state: installed
+
+    - name: Check if restart is needed  # noqa no-changed-when
+      ansible.builtin.command: needs-restarting -r
+      register: patch_needs_restarting
+      ignore_errors: true
+
+    - name: Set reboot facts
+      ansible.builtin.set_stats:
+        data:
+          patch_reboot_required: true
+          patch_reboot_required_stdout: "{{ patch_needs_restarting.stdout }}"
+      when: patch_needs_restarting.rc == 1

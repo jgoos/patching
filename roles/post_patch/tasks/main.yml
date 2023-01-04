@@ -1,0 +1,5 @@
+---
+# tasks file for post_patch
+- name: Run POST patching checks
+  ansible.builtin.debug:
+    msg: "Running POST patching checks"
