@@ -1,0 +1,5 @@
+---
+# defaults file for smtp_credential
+smtp_credential_validate_certs: true
+smtp_credential_description: "Credentials type for SMTP"
+smtp_credential_name: "SMTP"

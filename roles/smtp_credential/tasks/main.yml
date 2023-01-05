@@ -1,0 +1,11 @@
+---
+# tasks file for smtp_credential
+- name: Create SMTP credential type
+  ansible.controller.credential_type:
+    name: "{{ smtp_credential_name }}"
+    description: "{{ smtp_credential_description }}"
+    kind: cloud
+    inputs: "{{ lookup('file', 'smtp_inputs_config.json') }}"
+    injectors: "{{ lookup('file', 'smtp_injector_config.json') }}"
+    state: present
+    validate_certs: "{{ smtp_credential_validate_certs | bool }}"

@@ -1,0 +1,36 @@
+{
+  "fields": [
+    {
+      "id": "host",
+      "type": "string",
+      "label": "SMTP server",
+      "secret": false,
+      "help_text": "example: smtp.gmail.com"
+    },
+    {
+      "id": "port",
+      "type": "string",
+      "label": "port",
+      "secret": false
+    },
+    {
+      "id": "username",
+      "type": "string",
+      "label": "Username",
+      "secret": false
+    },
+    {
+      "id": "password",
+      "type": "string",
+      "label": "Password",
+      "secret": true,
+      "help_text": "If SMTP requires password."
+    }
+  ],
+  "required": [
+    "username",
+    "password",
+    "host",
+    "port"
+  ]
+}
