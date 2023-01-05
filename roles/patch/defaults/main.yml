@@ -3,3 +3,5 @@
 patch_security_updates: false
 patch_bugfix_updates: false
 patch_check_reboot_needed: false
+patch_reboot_required: false
+patch_reboot_required_stdout: ""
