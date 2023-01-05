@@ -9,4 +9,4 @@ mail_report_smtp_username: "{{ smtp_username }}"
 mail_report_system_name: "{{ inventory_hostname }}"
 
 mail_report_template_reboot_step_reboot_required: "{{ patch_reboot_required | default(false) }}"
-mail_report_template_reboot_step_reboot_required_stdout: "{{ patch_reboot_required_stdout | default(false) }}"
+mail_report_template_reboot_step_reboot_required_stdout: "{{ patch_reboot_required_stdout | default('No output from needs-restarting command') }}"
