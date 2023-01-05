@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: Joep Goossens
   description: Mail the patch result to system owner.

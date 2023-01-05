@@ -7,3 +7,6 @@ mail_report_smtp_password: "{{ smtp_password }}"
 mail_report_smtp_port: "{{ smtp_port }}"
 mail_report_smtp_username: "{{ smtp_username }}"
 mail_report_system_name: "{{ inventory_hostname }}"
+
+mail_report_template_reboot_step_reboot_required: "{{ patch_reboot_required | default(false) }}"
+mail_report_template_reboot_step_reboot_required_stdout: "{{ patch_reboot_required_stdout | default(false) }}"

@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: Joep Goossens
   description: Run the PRE-patch tasks and checks.
