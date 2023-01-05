@@ -1,6 +1,6 @@
 # Ansible Collection - jgoos.patch_workflow
 
-Documentation for the collection.
+Ansible Collection for patching RHEL systems via a workflow in Ansible Automation Platform.
 
 ## playbooks
 

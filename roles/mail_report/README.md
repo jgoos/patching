@@ -1,7 +1,7 @@
 Mail Patch Report
 =========
 
-A brief description of the role goes here.
+Send a patch report to system owner.
 
 Requirements
 ------------
@@ -21,9 +21,8 @@ A list of other roles hosted on Galaxy should go here, plus any details in regar
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
     - hosts: servers
+      connection: local
+      gather_facts: false
       roles:
-         - { role: username.rolename, x: 42 }
-
+        - { role: jgoos.patch_workflow.mail_report }
