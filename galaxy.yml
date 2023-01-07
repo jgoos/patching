@@ -1,6 +1,7 @@
+---
 namespace: jgoos
 name: patch_workflow
-version: 0.1.20
+version: 0.1.22
 readme: README.md
 authors:
   - J Goossens <jgoos.code@gmail.com>
@@ -10,9 +11,9 @@ license:
   - MIT
 
 tags:
-  - aap
-  - ansible
-  - automation
+  - patching
+  - rhel
+  - security
 
 # Collections that this collection requires to be installed for it to be usable. The key of the dict is the
 # collection label 'namespace.name'. The value is a version range

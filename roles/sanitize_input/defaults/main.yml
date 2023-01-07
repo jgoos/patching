@@ -1,3 +1,4 @@
 ---
 # defaults file for sanitize_input
 sanitize_input_example: 50
+sanitize_patch_survey_reboot_requested: ""
