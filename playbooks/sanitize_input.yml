@@ -1,6 +1,6 @@
 ---
 - name: Check and sanitize input
-  hosts: '{{target|default("localhost")}}'
+  hosts: '{{target|default("all")}}'
   connection: local
   become: false
   gather_facts: false
