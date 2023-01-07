@@ -1,7 +1,7 @@
 Role Name
 =========
 
-This role creates a SMTP credential type in Ansible Automation Platform
+This Ansible role generates a SMTP credential type in an automation platform. This credential type can be used to store SMTP server login information, such as the hostname, port, and login credentials.
 
 Requirements
 ------------
@@ -11,7 +11,11 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+| Variable name | Description |
+| --- | --- |
+| `smtp_credential_validate_certs` | A flag indicating whether or not to validate SSL/TLS certificates when connecting to the Automation Controller when creating the credential type |
+| `smtp_credential_description` | A description for the SMTP credential |
+| `smtp_credential_name` | The name for the SMTP credential |
 
 Dependencies
 ------------

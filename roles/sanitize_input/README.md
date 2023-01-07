@@ -1,7 +1,7 @@
 Sanitize input
 =========
 
-A brief description of the role goes here.
+This ansible role checks and sanitizes input variables. This is important to ensure that the input is safe to use and does not contain any unexpected or malicious data. The role performs various checks on the input variables, such as validating the data type and range, and cleaning up any special characters that may cause issues.
 
 Requirements
 ------------

@@ -1,7 +1,7 @@
 Mail Patch Report
 =========
 
-Send a patch report to system owner.
+This Ansible role is designed to send an email. To use this role, simply specify the email addresses that should receive the email and configure any additional options as needed.
 
 Requirements
 ------------
@@ -11,12 +11,17 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
-
-Dependencies
-------------
-
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+| Variable name | Description |
+| --- | --- |
+| `mail_report_send_to` | The email address that the report should be sent to |
+| `mail_report_sender` | The email address that the report will be sent from |
+| `mail_report_smtp_host` | The hostname of the SMTP server that will be used to send the email |
+| `mail_report_smtp_password` | The password for the SMTP server |
+| `mail_report_smtp_port` | The port number of the SMTP server |
+| `mail_report_smtp_username` | The username for the SMTP server |
+| `mail_report_system_name` | The hostname of the system that the report is being generated for |
+| `mail_report_template_reboot_step_reboot_required` | A flag indicating whether or not a reboot is required after patching |
+| `mail_report_template_reboot_step_reboot_required_stdout` | Output from the `needs-restarting` command, indicating which processes need to be restarted after patching |
 
 Example Playbook
 ----------------

@@ -1,7 +1,7 @@
 Reboot systems
 =========
 
-A brief description of the role goes here.
+This ansible role reboots Red Hat Enterprise Linux (RHEL) systems. A reboot is only performed if two conditions are met: 1) a reboot is selected, and 2) a reboot is required.
 
 Requirements
 ------------
@@ -11,7 +11,10 @@ Any pre-requisites that may not be covered by Ansible itself or the role should 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
+| Variable name | Description |
+| --- | --- |
+| `reboot_required` | A flag indicating whether or not a reboot is required |
+| `reboot_selected` | A flag indicating whether or not a reboot has been selected |
 
 Dependencies
 ------------

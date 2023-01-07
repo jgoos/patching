@@ -1,22 +1,18 @@
 Patch System
 =========
 
-A brief description of the role goes here.
-
-Requirements
-------------
-
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
+This ansible role patches Red Hat Enterprise Linux (RHEL) systems. It can be configured to apply security updates, bugfix updates, or both. Additionally, the role checks if a reboot is required after applying patches. To use this role, specify the desired patching configuration and the role will take care of the rest. This role ensures that your RHEL systems are kept up to date and secure.
 
 Role Variables
 --------------
 
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
-
-Dependencies
-------------
-
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+| Variable name | Description |
+| --- | --- |
+| `patch_security_updates` | A flag indicating whether or not to apply security updates |
+| `patch_bugfix_updates` | A flag indicating whether or not to apply bugfix updates |
+| `patch_check_reboot_needed` | A flag indicating whether or not to check if a reboot is required after applying patches |
+| `patch_reboot_required` | A flag indicating whether or not a reboot is required after applying patches |
+| `patch_reboot_required_stdout` | Output from the `needs-restarting` command, indicating which processes need to be restarted after patching |
 
 Example Playbook
 ----------------

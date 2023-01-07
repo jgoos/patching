@@ -1,7 +1,7 @@
 PRE Patch tasks
 =========
 
-A brief description of the role goes here.
+This ansible role performs pre-patch checks before patches are applied to a system. These checks help to ensure that the system is ready for patching and that the patching process will run smoothly. 
 
 Requirements
 ------------

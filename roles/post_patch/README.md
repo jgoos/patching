@@ -1,7 +1,7 @@
 POST Patch tasks
 =========
 
-A brief description of the role goes here.
+This ansible role performs post-patch checks after patches are applied to a system. These checks help to ensure that the patching process was successful and that the system is still functioning as expected. 
 
 Requirements
 ------------
