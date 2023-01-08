@@ -1,29 +1,26 @@
 Hello,
 
-The patching process has been completed on your system, {{ mail_report_system_name }}.
+The systems have recently undergone a patching process. This was completed as part of [COMPANY NAME]'s ongoing efforts to maintain the security and stability of our systems.
+
+systems:
+
+{{ mail_report_system_name }}.
 
 {% if mail_report_template_reboot_step_reboot_required %}
 
-Please note that a reboot may still be necessary in order for the patches to take effect. 
-If you have not already done so, please reboot your system at your earliest convenience.
+At this time, a reboot is still necessary. The following jobtemplate can be used in our automation platform to complete the process:
+[REBOOT JOBTEMPLATE INSTRUCTIONS]
 
-{# TODO: Enter reboot text #}
+It is worth noting that if the reboot is not performed, the following services may be affected:
 
+---
 {{ mail_report_template_reboot_step_reboot_required_stdout }}
+---
+
+We apologize for any inconvenience this may cause and appreciate your understanding while we work to maintain the security and stability of our systems.
+
 
 {% endif %}
-
-{#
-
-Add system information #TODO
-- system name
-- organization
-- rhel version
-- kernel version
-
-
-#}
-
 If you have any questions or concerns, don't hesitate to reach out to us.
 
 Best regards,
