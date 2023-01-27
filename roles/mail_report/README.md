@@ -30,4 +30,4 @@ Example Playbook
       connection: local
       gather_facts: false
       roles:
-        - { role: jgoos.patch_workflow.mail_report }
+        - { role: jgoos.patching.mail_report }

@@ -4,4 +4,4 @@
   gather_facts: true
   become: true
   roles:
-    - jgoos.patch_workflow.patch
+    - jgoos.patching.patch

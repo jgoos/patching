@@ -25,4 +25,4 @@ Example Playbook
       gather_facts: true
       become: true
       roles:
-         - { role: jgoos.patch_workflow.pre_patch }
+         - { role: jgoos.patching.pre_patch }
