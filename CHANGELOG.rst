@@ -1,5 +1,5 @@
 ===============================
-jgoos.patch_workflow Release Notes
+jgoos.patching Release Notes
 ===============================
 
 .. contents:: Topics
@@ -10,7 +10,7 @@ v0.1.0
 Release Summary
 ---------------
 
-The first release of the jgoos.patch_workflow collection.
+The first release of the jgoos.patching collection.
 
 New Playbooks
 ---------

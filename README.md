@@ -1,4 +1,4 @@
-# Ansible Collection - jgoos.patch_workflow
+# Ansible Collection - jgoos.patching
 
 Ansible Collection for patching RHEL systems via a workflow in Ansible Automation Platform.  
 This workflow is designed to allow system owners to easily patch their systems through the automation platform.
@@ -17,9 +17,9 @@ This workflow is designed to allow system owners to easily patch their systems t
 
 ## Playbooks
 
-- jgoos.patch_workflow.patch_system.yml
-- jgoos.patch_workflow.post_patching_checks.yml
-- jgoos.patch_workflow.pre_patching_checks.yml
-- jgoos.patch_workflow.reboot_system.yml
-- jgoos.patch_workflow.sanitize_input.yml
-- jgoos.patch_workflow.send_email.yml
+- jgoos.patching.patch_system.yml
+- jgoos.patching.post_patching_checks.yml
+- jgoos.patching.pre_patching_checks.yml
+- jgoos.patching.reboot_system.yml
+- jgoos.patching.sanitize_input.yml
+- jgoos.patching.send_email.yml

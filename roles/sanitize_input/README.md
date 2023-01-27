@@ -26,4 +26,4 @@ Example Playbook
       become: false
       gather_facts: false
       roles:
-         - { role: jgoos.patch_workflow.sanitize_input }
+         - { role: jgoos.patching.sanitize_input }

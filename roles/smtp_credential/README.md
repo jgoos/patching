@@ -30,4 +30,4 @@ Example Playbook
       become: false
       gather_facts: false
       roles:
-         - { role: jgoos.patch_workflow.smtp_credential }
+         - { role: jgoos.patching.smtp_credential }

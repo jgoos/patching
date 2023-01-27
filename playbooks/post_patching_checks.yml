@@ -3,4 +3,4 @@
   hosts: '{{target|default("all")}}'
   gather_facts: true
   roles:
-    - jgoos.patch_workflow.post_patch
+    - jgoos.patching.post_patch

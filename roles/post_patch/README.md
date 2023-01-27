@@ -24,4 +24,4 @@ Example Playbook
     - hosts: servers
       gather_facts: true
       roles:
-         - { role: jgoos.patch_workflow.post_patch }
+         - { role: jgoos.patching.post_patch }
